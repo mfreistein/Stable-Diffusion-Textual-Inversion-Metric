@@ -14,18 +14,18 @@ Stable Diffusion is a deep learning, text-to-image model released in 2022. It is
 - 3 - Stable Diffusion 1.5 generated Cézanne landscape paintings with guidance scale 0-1 (w/o textual inversion) - 93 images
 - 4 - Impressionist landscape paintings from WikiArt dataset - 94 images
 
-Textual Inversion was not implemented when creating the dataset. A separate test dataset with Textual Inversion generated Cézanne landscape paintings was created [here](Textual_Inversion_Metric/StableDiffusion2_textual_inversion_image_generator.ipynb).
+Textual Inversion was not implemented when creating the dataset. A separate test dataset with Textual Inversion generated Cézanne landscape paintings was created [here](https://github.com/mfreistein/Stable-Diffusion-Textual-Inversion-Metric/blob/main/StableDiffusion2_textual_inversion_image_generator.ipynb).
 
-The code for Textual Inversion training of Stable Diffusion can be found [here](Textual_Inversion_Metric/StableDiffusion2_textual_inversion_training.ipynb)
+The code for Textual Inversion training of Stable Diffusion can be found [here](https://github.com/mfreistein/Stable-Diffusion-Textual-Inversion-Metric/blob/main/StableDiffusion2_textual_inversion_training.ipynb)
 
 - TISD1 - images created by Stable Diffusion 2 with textual inversion trained prompt: "painting in the style of <Cézanne>"
 - TISD2 - images created by Stable Diffusion 2 with textual inversion trained prompt: "landscape painting in the style of <Cézanne>"
 - TISD3 - images created by Stable Diffusion 2 with textual inversion trained prompt: "painting of the Provence in the style of <Cézanne>"
 - TISD4 - images created by Stable Diffusion 2 with textual inversion trained prompt: "painting of Mont Saint Victoire in the style of <Cézanne>"
 
-Before training the CNN, the images were all resized to (512, 512, 3). This was done to disabuse the CNN of learning image sizes. Furthermore, the images were all converted to grayscale. This was done to disabuse the CNN of learning color schemes, as color is difficult to grasp consistently for cameras and depends on lighting etc.. The code for data preparation can be found [here](Textual_Inversion_Metric/Data%20Cleaning.ipynb).
+Before training the CNN, the images were all resized to (512, 512, 3). This was done to disabuse the CNN of learning image sizes. Furthermore, the images were all converted to grayscale. This was done to disabuse the CNN of learning color schemes, as color is difficult to grasp consistently for cameras and depends on lighting etc.. The code for data preparation can be found [here](https://github.com/mfreistein/Stable-Diffusion-Textual-Inversion-Metric/blob/main/Data%20Cleaning.ipynb).
 
-**Evaluation metrics**: Three different fine-tuned Convolutional Neural Network models were employed to judge the quality of the textual inversion generated images: [MobileNet](Textual_Inversion_Metric/Cezanne_MobileNet.ipynb), [EfficinetNetB7](Textual_Inversion_Metric/Cezanne_efficientnetb7.ipynb) and [EfficientNetV2L](Textual_Inversion_Metric/Cezanne_efficientnetv2l.ipynb). All were trained using the Keras libary.
+**Evaluation metrics**: Three different fine-tuned Convolutional Neural Network models were employed to judge the quality of the textual inversion generated images: [MobileNet](https://github.com/mfreistein/Stable-Diffusion-Textual-Inversion-Metric/blob/main/Cezanne_MobileNet.ipynb), [EfficinetNetB7](https://github.com/mfreistein/Stable-Diffusion-Textual-Inversion-Metric/blob/main/Cezanne_efficientnetb7.ipynb) and [EfficientNetV2L](https://github.com/mfreistein/Stable-Diffusion-Textual-Inversion-Metric/blob/main/Cezanne_efficientnetv2l.ipynb). All were trained using the Keras libary.
    
 **Sources**:
 - https://arxiv.org/abs/2208.01618
