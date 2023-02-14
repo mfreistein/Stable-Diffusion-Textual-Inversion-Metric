@@ -6,7 +6,7 @@ Stable Diffusion is a deep learning, text-to-image model released in 2022. It is
 
 **Used data**: The dataset to fine-tune the CNN consists of a range of landscape paintings similar in style to that of Paul Cézanne. The photographs of the images are unfortunately not consistent in quality and were taken from a range of different sources. The images were curated and divided into 5 categories from most (0) to least similar (4) in style.
 
-**Implementation**: The code to generate images with Stable Diffusion 1.5 can be found [here](Textual_Inversion_Metric/StableDiffusion1.5_image_generator.ipynb).
+**Implementation**: The code to generate images with Stable Diffusion 1.5 can be found [here](Stable-Diffusion-Textual-Inversion-Metric/blob/main/StableDiffusion1.5_image_generator.ipynb).
 
 - 0 - authentic Cézanne landscape paintings - 89 images
 - 1 - hand-painted replicas and forgeries of authentic Cézanne landscape paintings - 68 images
